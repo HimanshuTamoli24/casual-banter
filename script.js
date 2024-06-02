@@ -1,14 +1,16 @@
-
 let itemCounter = 5;
 
+// Function to allow drop
 function allowDrop(ev) {
     ev.preventDefault();
 }
 
+// Function to handle drag
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
 }
 
+// Function to handle drop
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
@@ -23,6 +25,7 @@ function drop(ev) {
     }
 }
 
+// Function to add new item
 function addItem() {
     itemCounter++;
     const newItem = document.createElement("div");
@@ -39,6 +42,7 @@ function addItem() {
     document.getElementById("item-container").appendChild(newItem);
 }
 
+// Function to delete last item
 function deleteItem() {
     if (itemCounter > 0) {
         const itemContainer = document.getElementById("item-container");
@@ -49,3 +53,4 @@ function deleteItem() {
         }
     }
 }
+

@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>casual-banter</title>
     <link rel="stylesheet" href="style.css" />
-<link rel="icon" href="img.jpg" type="image/png">
-
+    <link rel="icon" href="img.jpg" type="image/png" />
   </head>
   <body>
+    <!-- HEADING -->
     <h1>"casual banter"</h1>
+
     <div class="container">
+      <!-- FIRST BOX -->
       <div class="box">
         <div class="title">
           <input type="text" placeholder="Name 1" />
@@ -21,6 +23,8 @@
           ondragover="allowDrop(event)"
         ></div>
       </div>
+      <!-- SECOND BOX -->
+
       <div class="box">
         <div class="title">
           <input type="text" placeholder="Name 2" />
@@ -31,6 +35,8 @@
           ondragover="allowDrop(event)"
         ></div>
       </div>
+      <!-- THIRD BOX -->
+
       <div class="box">
         <div class="title">
           <input type="text" placeholder="Name 3" />
@@ -41,6 +47,8 @@
           ondragover="allowDrop(event)"
         ></div>
       </div>
+      <!-- FOURTH BOX -->
+
       <div class="box">
         <div class="title">
           <input type="text" placeholder="Name 4" />
@@ -51,6 +59,8 @@
           ondragover="allowDrop(event)"
         ></div>
       </div>
+      <!-- FIVE BOX -->
+
       <div class="box">
         <div class="title">
           <input type="text" placeholder="Name 5" />
@@ -61,6 +71,7 @@
           ondragover="allowDrop(event)"
         ></div>
       </div>
+      <!-- ITEMS DIVS -->
     </div>
     <div class="item-container" id="item-container">
       <div class="item" id="item1" draggable="true" ondragstart="drag(event)">
@@ -79,6 +90,8 @@
         <input type="text" placeholder="Item 5" />
       </div>
     </div>
+
+    <!-- BUTTONS -->
     <div class="buttons">
       <button class="button" onclick="addItem()">Add More Item</button>
       <button class="button" onclick="deleteItem()">Delete Last Item</button>
